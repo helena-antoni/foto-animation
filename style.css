@@ -1,0 +1,40 @@
+
+
+img{
+    --s:250px;
+    --b:8px;
+    --g:15px;
+    --c:#ffff;
+
+    width: var(--s);
+    aspect-ratio: 1;
+    outline: calc(var(--s)/2) solid #0007;
+    outline-offset: calc(var(--s)/-2);
+    cursor:pointer;
+    transition: 0.3s;  
+    border-radius: 50%;  
+    border: 2px solid white;
+}
+
+
+img:hover{
+    outline: var(--b) solid var(--c); 
+    outline-offset: var(--g);  
+}
+
+img{
+    
+   
+}
+
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-auto-flow: column;
+    place-content: center;
+    place-items:center;
+    gap: 50px;
+    background: black;
+}
